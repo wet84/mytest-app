@@ -1,12 +1,6 @@
 import React from 'react';
+import { Input } from 'semantic-ui-react'
 
-function Input(){
-    return (
-        <div className="ui action input">
-            <input type="text" placeholder="Поиск..."></input>
-            <button className="ui button">Поиск</button>
-        </div>
-    );
-}
+const InputList = () => <Input action='Search' placeholder='Search...'></Input>
 
-export default Input;
+export default InputList;

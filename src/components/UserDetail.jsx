@@ -1,8 +1,11 @@
 import React from 'react';
+import { Grid } from 'semantic-ui-react'
 
 function UserDetail(){
     return (
-        <div className="ten wide column user-detail-style">Right</div>
+        <Grid.Column width={10} className="user-detail-style">
+            Right
+        </Grid.Column>
     );
 }
 
