@@ -7,17 +7,16 @@ import Input from './Input';
 function Sidebar(){
 
     return (
-
         <Grid.Column width={6} className="user-detail-style">
             <Input />
-            <Table basic='very' celled collapsing>
+            <Table basic='very' celled>
                 <Table.Body>
                     <Table.Row>
                         <Table.Cell>
                             <Header as='h4' image>
                                 <Image src='#' rounded size='mini' />
                                 <Header.Content>
-                                     Name 
+                                    Name 
                                 <Header.Subheader>additional information</Header.Subheader>
                                 </Header.Content>
                             </Header>
@@ -26,7 +25,6 @@ function Sidebar(){
                 </Table.Body>
             </Table>
         </Grid.Column>
-
     );
 }
 

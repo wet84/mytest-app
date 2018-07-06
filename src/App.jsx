@@ -9,7 +9,6 @@ import Input from './components/Input';
 import Clientdetail from './components/UserDetail';
 import UserDetail from './components/UserDetail';
 
-
 class App extends Component {
 
   render() {
