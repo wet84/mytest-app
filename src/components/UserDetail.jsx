@@ -2,8 +2,6 @@ import React from 'react';
 import { Grid, Card, Icon, Image } from 'semantic-ui-react'
 
 
-
-
 function UserDetail({client, general, avatar }){
     return (
       
@@ -21,5 +19,5 @@ function UserDetail({client, general, avatar }){
         </Grid.Column>
     );
 }
-
+  
 export default UserDetail;
