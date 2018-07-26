@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Header, Image, Table } from 'semantic-ui-react'
 
 import Input from './Input';
+import { getClients } from '../userData/ClientData';
 
 
 // function Sidebar(props){
@@ -22,7 +23,12 @@ import Input from './Input';
 //         </table>
 //     );
 // }
-    function Sidebar(){
+
+    function ListUser(props){
+    // {console.log(props.client[0].general.firstName)}
+      //console.log('client', this.props.client)}
+      console.log(props)
+     // const { client } = props
         return (
             <Grid.Column width={6} className="user-detail-style">
                 <Input />
@@ -33,7 +39,7 @@ import Input from './Input';
                                 <Header as='h4' image>
                                     <Image src='#' rounded size='mini' />
                                     <Header.Content>
-                                    First Name
+                                       {props.firstName}
                                     <Header.Subheader>info</Header.Subheader>
                                     </Header.Content>
                                 </Header>
@@ -45,5 +51,25 @@ import Input from './Input';
         );
     }
 
+    // const ListUser = () => (
+    //         <Grid.Column width={6} className="user-detail-style">
+    //             <Input />
+    //             <Table basic='very' celled>
+    //                 <Table.Body>
+    //                     <Table.Row>
+    //                         <Table.Cell>
+    //                             <Header as='h4' image>
+    //                                 <Image src="#" rounded size='mini' />
+    //                                 <Header.Content>
+    //                                     name
+    //                                 <Header.Subheader>info</Header.Subheader>
+    //                                 </Header.Content>
+    //                             </Header>
+    //                         </Table.Cell>
+    //                     </Table.Row>
+    //                 </Table.Body>
+    //             </Table>
+    //         </Grid.Column>
+    //   )
 
-export default Sidebar;
+export default ListUser;

@@ -12,20 +12,28 @@ import UserDetail from './components/UserDetail';
 import * as userData from './userData/ClientData'
 
 class App extends Component {
-  state = { clients: [] }
+  state = { 
+    clients: []
+  }
 
   componentDidMount(){
       const clients = userData.getClients()
       this.setState(() => ({clients}))
   }
-
+ 
   render() {
+    const { clients } = this.state
+    //  console.log(clients)
+
+    // const {0:{general: { firstName }}} = clients
+    //  console.log(firstName)
+
     return (
       <div className="App">
         <Grid className="app-style">
           <Grid.Row>
               {/* <ListUser data={data}/> */}
-              <ListUser />
+              <ListUser client={clients}/>
               <UserDetail />
               {/* <ClientData /> */}
           </Grid.Row>
